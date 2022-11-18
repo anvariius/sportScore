@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>SportScore</title>
+</head>
+<body>
+<div class="wrap">
+    <div class="stat-block" id="h2hStatistic" style="display: none;">
+        <div class="h2">Статистика личных встреч</div>
+        <div class="stat-info">
+            <div class="stat-info-header">
+                <div class="team">
+                    <div class="team-img" id="HTI"></div>
+                    <div class="team-name" id="homeTeamName"></div>
+                    <div class="team-goals" id="homeTeamGoals"></div>
+                </div>
+                <div class="team">
+                    <div class="team-goals" id="awayTeamGoals"></div>
+                    <div class="team-name" id="awayTeamName"></div>
+                    <div class="team-img" id="ATI"></div>
+                </div>
+            </div>
+            <div class="stat-info-body">
+                <div class="wins-count-row">
+                    <div class="w-item">
+                        <div class="w-circle" style="background-color: rgb(118, 169, 99);"></div>
+                        <div class="w-text" id="homeTeamWins"></div>
+                    </div>
+                    <div class="w-item">
+                        <div class="w-circle" style="background-color: rgb(126, 131, 146);"></div>
+                        <div class="w-text" id="TeamsDraws"></div>
+                    </div>
+                    <div class="w-item">
+                        <div class="w-circle" style="background-color: rgb(74, 144, 226);"></div>
+                        <div class="w-text" id="awayTeamWins"></div>
+                    </div>
+                </div>
+                <!--
+                <div class="percent-row">
+                    <div class="p-item" id="homeWinsPercent" style="background-color: rgb(118, 169, 99);"></div>
+                    <div class="p-item" id="DrawsPercent" style="background-color: rgb(126, 131, 146);"></div>
+                    <div class="p-item" id="awayWinsPercent" style="background-color: rgb(74, 144, 226);"></div>
+                </div>
+                -->
+            </div>
+        </div>
+        <div class="stat-items-wrap" id="h2hEventsBody">
+            <div class="stat-item" id="toClone">
+                <div class="item-date" id="itemDate"></div>
+                <div class="item-teams">
+                    <div class="team">
+                        <div class="team-name" id="itemHomeName"></div>
+                        <div class="team-img" id="itemHomeImage"></div>
+                    </div>
+                    <div class="score" id="itemScore"></div>
+                    <div class="team">
+                        <div class="team-img" id="itemAwayImage"></div>
+                        <div class="team-name" id="itemAwayName"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="js/jquery-3.0.0.min.js"></script>
+<script src="js/main.js"></script>
+</html>
